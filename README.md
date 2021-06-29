@@ -6,3 +6,5 @@
 - http://localhost:5000/api/movies/1/casts/2
 - http://localhost:5000/api/movies/4 --> return error 404
 - http://localhost:5000/api/movies/2/casts/4 --> return error 404
+
+### Api available in json and XML format
