@@ -8,3 +8,5 @@
 - http://localhost:5000/api/movies/2/casts/4 --> return error 404
 
 ### Api available in json and XML format
+- http://localhost:5000/api/movies/1/casts/1?Accept=application/xml
+- http://localhost:5000/api/movies/1/casts/1?Accept=application/json
