@@ -21,3 +21,8 @@ C:\Users\AngeldeCaldas\Documents\Demos\Api\obj\Debug\net5.0\Api.dll
 C:\Users\AngeldeCaldas\Documents\Demos\Api\obj\Debug\net5.0\ref\Api.dll
 C:\Users\AngeldeCaldas\Documents\Demos\Api\obj\Debug\net5.0\Api.pdb
 C:\Users\AngeldeCaldas\Documents\Demos\Api\obj\Debug\net5.0\Api.genruntimeconfig.cache
+C:\Users\AngeldeCaldas\Documents\Demos\Api\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\AngeldeCaldas\Documents\Demos\Api\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\AngeldeCaldas\Documents\Demos\Api\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\AngeldeCaldas\Documents\Demos\Api\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\AngeldeCaldas\Documents\Demos\Api\obj\Debug\net5.0\Api.csproj.CopyComplete
