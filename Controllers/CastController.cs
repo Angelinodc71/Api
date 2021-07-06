@@ -1,7 +1,10 @@
+using System;
 using System.Linq;
 using Api.Models;
+using Api.Services;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
 namespace Api.Controllers
 {
@@ -9,6 +12,13 @@ namespace Api.Controllers
     [Route("api/movies/{movieId}/casts")]
     public class CastController : ControllerBase
     {
+        private ILogger<CastController> _logger;
+        private IMailService _iMailService;
+
+        public CastController (ILogger<CastController> logger, IMailService iMailService) {
+            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+            _iMailService = iMailService ?? throw new ArgumentNullException(nameof(iMailService));
+        }
         [HttpGet]
         public IActionResult getCasts (int movieId) 
         {
@@ -25,22 +35,32 @@ namespace Api.Controllers
         [HttpGet("{id}", Name = "getCast")]
         public IActionResult getCast(int movieId, int id) 
         {
-            var movie = MoviesDataStore.Current
-            .Movies.FirstOrDefault(x => x.id == movieId);
+            try {
+                throw new InvalidOperationException();
 
-            if (movie == null) 
-            {
-                return NotFound();
+                var movie = MoviesDataStore.Current
+                .Movies.FirstOrDefault(x => x.id == movieId);
+
+                if (movie == null) 
+                {
+                    return NotFound();
+                }
+
+                var cast = movie.Casts.FirstOrDefault(x => x.id == id); 
+                
+                if (cast == null) 
+                {
+                    _logger.LogInformation($"This cast with id {id} not found !");
+                    return NotFound();
+                }
+
+                return Ok(cast);
             }
-
-            var cast = movie.Casts.FirstOrDefault(x => x.id == id); 
-            
-            if (cast == null) 
+            catch (System.Exception ex)
             {
-                return NotFound();
+                _logger.LogCritical($"This cast with id {id} not found (user)!", ex);
+                return StatusCode(500,"Error 500, recurso no encontrado");
             }
-
-            return Ok(cast);
         }
 
         [HttpPost]
@@ -165,6 +185,8 @@ namespace Api.Controllers
             {
                 return NotFound();
             }
+
+            _iMailService.Send("Recurso eliminado", $"El recurso con id {id} fue eliminado");
 
             movie.Casts.Remove(castFromStore);
 
