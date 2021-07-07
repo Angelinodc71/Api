@@ -101,3 +101,8 @@
 2021-07-06 13:08:11.8594|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
 2021-07-06 13:08:11.8594|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
 2021-07-06 13:08:11.8594|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\AngeldeCaldas\Documents\Demos\Api
+2021-07-07 11:45:04.5128|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-07-07 11:45:04.5342|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-07-07 11:45:04.5342|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-07-07 11:45:04.5342|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-07-07 11:45:04.5342|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\AngeldeCaldas\Documents\Demos\Api
