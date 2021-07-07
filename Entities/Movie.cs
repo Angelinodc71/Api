@@ -11,7 +11,7 @@ namespace Api.Entities
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
 
-         [Required (ErrorMessage = "The \"name\" attribute is required")]
+        [Required (ErrorMessage = "The \"name\" attribute is required")]
         [MaxLength(20, ErrorMessage = "MaxLength expected (20 characters)")]
         public string name { get; set; }
         

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "EJ1k7SQWGVgAHoC06Vdf4TMxIjrxU/oNyG7bGzd/tKRAyaN53YaHWH4fCWyrvDok0vitYIzD7cxS6R6n/Ayf/Q==",
+  "dgSpecHash": "Pj9luizbWHDVjd+5H0d9qeRKp/49KgiusSLiYnGO2UIfphZ5Q76OTTDZXPGQ4M2J4T2IrX5Y2UlakFzGJ9W+Wg==",
   "success": true,
-  "projectFilePath": "c:\\Users\\AngeldeCaldas\\Documents\\Demos\\Api\\Api.csproj",
+  "projectFilePath": "C:\\Users\\AngeldeCaldas\\Documents\\Demos\\Api\\Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\AngeldeCaldas\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\AngeldeCaldas\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.0-preview.6.20312.15\\microsoft.aspnetcore.jsonpatch.5.0.0-preview.6.20312.15.nupkg.sha512",
     "C:\\Users\\AngeldeCaldas\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\5.0.0-preview.6.20312.15\\microsoft.aspnetcore.mvc.newtonsoftjson.5.0.0-preview.6.20312.15.nupkg.sha512",
     "C:\\Users\\AngeldeCaldas\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
@@ -12,6 +13,7 @@
     "C:\\Users\\AngeldeCaldas\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.6\\microsoft.entityframeworkcore.5.0.6.nupkg.sha512",
     "C:\\Users\\AngeldeCaldas\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.6\\microsoft.entityframeworkcore.abstractions.5.0.6.nupkg.sha512",
     "C:\\Users\\AngeldeCaldas\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.6\\microsoft.entityframeworkcore.analyzers.5.0.6.nupkg.sha512",
+    "C:\\Users\\AngeldeCaldas\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.6\\microsoft.entityframeworkcore.design.5.0.6.nupkg.sha512",
     "C:\\Users\\AngeldeCaldas\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.6\\microsoft.entityframeworkcore.relational.5.0.6.nupkg.sha512",
     "C:\\Users\\AngeldeCaldas\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\5.0.6\\microsoft.entityframeworkcore.sqlite.5.0.6.nupkg.sha512",
     "C:\\Users\\AngeldeCaldas\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\5.0.6\\microsoft.entityframeworkcore.sqlite.core.5.0.6.nupkg.sha512",

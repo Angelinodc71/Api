@@ -106,3 +106,123 @@
 2021-07-07 11:45:04.5342|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
 2021-07-07 11:45:04.5342|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
 2021-07-07 11:45:04.5342|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\AngeldeCaldas\Documents\Demos\Api
+2021-07-07 15:12:51.7607|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2021-07-07 15:12:56.3765|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-07-07 15:12:56.3959|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-07-07 15:12:56.3959|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-07-07 15:12:56.3959|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-07-07 15:12:56.3959|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\AngeldeCaldas\Documents\Demos\Api
+2021-07-07 15:19:30.0137|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2021-07-07 15:19:32.6361|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-07-07 15:19:32.6582|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-07-07 15:19:32.6582|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-07-07 15:19:32.6582|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-07-07 15:19:32.6582|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\AngeldeCaldas\Documents\Demos\Api
+2021-07-07 15:23:09.9412|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE "Casts" (
+    "id" INTEGER NOT NULL CONSTRAINT "PK_Casts" PRIMARY KEY AUTOINCREMENT,
+    "name" TEXT NOT NULL,
+    "character" TEXT NOT NULL,
+    "movieId" INTEGER NULL,
+    "movieid" INTEGER NOT NULL,
+    CONSTRAINT "FK_Casts_Movies_movieId" FOREIGN KEY ("movieId") REFERENCES "Movies" ("id") ON DELETE RESTRICT
+);
+2021-07-07 15:23:09.9918|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2021-07-07 15:23:40.0276|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE "Casts" (
+    "id" INTEGER NOT NULL CONSTRAINT "PK_Casts" PRIMARY KEY AUTOINCREMENT,
+    "name" TEXT NOT NULL,
+    "character" TEXT NOT NULL,
+    "movieId" INTEGER NULL,
+    "movieid" INTEGER NOT NULL,
+    CONSTRAINT "FK_Casts_Movies_movieId" FOREIGN KEY ("movieId") REFERENCES "Movies" ("id") ON DELETE RESTRICT
+);
+2021-07-07 15:23:40.0323|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2021-07-07 15:24:00.4150|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2021-07-07 15:24:03.1865|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-07-07 15:24:03.2068|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-07-07 15:24:03.2068|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-07-07 15:24:03.2068|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-07-07 15:24:03.2068|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\AngeldeCaldas\Documents\Demos\Api
+2021-07-07 15:24:09.3801|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE "Casts" (
+    "id" INTEGER NOT NULL CONSTRAINT "PK_Casts" PRIMARY KEY AUTOINCREMENT,
+    "name" TEXT NOT NULL,
+    "character" TEXT NOT NULL,
+    "movieId" INTEGER NULL,
+    "movieid" INTEGER NOT NULL,
+    CONSTRAINT "FK_Casts_Movies_movieId" FOREIGN KEY ("movieId") REFERENCES "Movies" ("id") ON DELETE RESTRICT
+);
+2021-07-07 15:24:09.4192|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2021-07-07 15:27:35.1240|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2021-07-07 15:27:38.1722|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-07-07 15:27:38.1910|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-07-07 15:27:38.1910|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-07-07 15:27:38.1910|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-07-07 15:27:38.1910|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\AngeldeCaldas\Documents\Demos\Api
+2021-07-07 15:27:43.2037|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE "Casts" (
+    "id" INTEGER NOT NULL CONSTRAINT "PK_Casts" PRIMARY KEY AUTOINCREMENT,
+    "name" TEXT NOT NULL,
+    "character" TEXT NOT NULL,
+    "MovieId" INTEGER NULL,
+    "Movieid" INTEGER NOT NULL,
+    CONSTRAINT "FK_Casts_Movies_MovieId" FOREIGN KEY ("MovieId") REFERENCES "Movies" ("id") ON DELETE RESTRICT
+);
+2021-07-07 15:27:43.2842|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2021-07-07 15:30:23.2307|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2021-07-07 15:30:27.2791|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-07-07 15:30:27.2998|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-07-07 15:30:27.2998|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-07-07 15:30:27.2998|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-07-07 15:30:27.2998|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\AngeldeCaldas\Documents\Demos\Api
+2021-07-07 15:30:32.5788|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE "Casts" (
+    "id" INTEGER NOT NULL CONSTRAINT "PK_Casts" PRIMARY KEY AUTOINCREMENT,
+    "name" TEXT NOT NULL,
+    "character" TEXT NOT NULL,
+    "movieId" INTEGER NULL,
+    "MovieId" INTEGER NOT NULL,
+    CONSTRAINT "FK_Casts_Movies_movieId" FOREIGN KEY ("movieId") REFERENCES "Movies" ("id") ON DELETE RESTRICT
+);
+2021-07-07 15:30:32.6390|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2021-07-07 15:30:40.8892|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE "Casts" (
+    "id" INTEGER NOT NULL CONSTRAINT "PK_Casts" PRIMARY KEY AUTOINCREMENT,
+    "name" TEXT NOT NULL,
+    "character" TEXT NOT NULL,
+    "movieId" INTEGER NULL,
+    "MovieId" INTEGER NOT NULL,
+    CONSTRAINT "FK_Casts_Movies_movieId" FOREIGN KEY ("movieId") REFERENCES "Movies" ("id") ON DELETE RESTRICT
+);
+2021-07-07 15:30:40.8978|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2021-07-07 15:30:55.6819|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2021-07-07 15:30:58.9948|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-07-07 15:30:59.0168|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-07-07 15:30:59.0168|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-07-07 15:30:59.0168|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-07-07 15:30:59.0168|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\AngeldeCaldas\Documents\Demos\Api
+2021-07-07 15:31:57.0706|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2021-07-07 15:32:00.3816|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-07-07 15:32:00.4014|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-07-07 15:32:00.4014|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-07-07 15:32:00.4014|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-07-07 15:32:00.4052|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\AngeldeCaldas\Documents\Demos\Api
+2021-07-07 15:32:30.1411|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2021-07-07 15:32:33.8557|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-07-07 15:32:33.8788|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-07-07 15:32:33.8788|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-07-07 15:32:33.8788|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-07-07 15:32:33.8788|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\AngeldeCaldas\Documents\Demos\Api
+2021-07-07 16:23:13.1960|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2021-07-07 16:23:17.2750|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-07-07 16:23:17.2964|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-07-07 16:23:17.2964|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-07-07 16:23:17.2964|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-07-07 16:23:17.2964|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\AngeldeCaldas\Documents\Demos\Api
+2021-07-07 16:23:18.8667|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2021-07-07 16:29:40.1979|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-07-07 16:29:40.2239|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-07-07 16:29:40.2239|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-07-07 16:29:40.2239|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-07-07 16:29:40.2239|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\AngeldeCaldas\Documents\Demos\Api

@@ -18,6 +18,6 @@ namespace Api.Entities
         [ForeignKey("movieId")]
         public Movie Movie { get; set; }
 
-        public int movieid { get; set; }
+        public int movieId { get; set; }
     }
 }

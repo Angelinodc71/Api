@@ -8,10 +8,9 @@ namespace Api.Context
         public DbSet<Movie> Movies { get; set; }
         public DbSet<Cast> Casts { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public MovieInfoContext(DbContextOptions<MovieInfoContext> options) : base(options)
         {
-            optionsBuilder.UseSqlite("co");
-            base.OnConfiguring(optionsBuilder);
+            //Database.EnsureCreated();
         }
     }
 }

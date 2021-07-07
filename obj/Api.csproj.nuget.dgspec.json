@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\AngeldeCaldas\\Documents\\Demos\\Api\\Api.csproj": {}
+    "C:\\Users\\AngeldeCaldas\\Documents\\Demos\\Api\\Api.csproj": {}
   },
   "projects": {
-    "c:\\Users\\AngeldeCaldas\\Documents\\Demos\\Api\\Api.csproj": {
+    "C:\\Users\\AngeldeCaldas\\Documents\\Demos\\Api\\Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\AngeldeCaldas\\Documents\\Demos\\Api\\Api.csproj",
+        "projectUniqueName": "C:\\Users\\AngeldeCaldas\\Documents\\Demos\\Api\\Api.csproj",
         "projectName": "Api",
-        "projectPath": "c:\\Users\\AngeldeCaldas\\Documents\\Demos\\Api\\Api.csproj",
+        "projectPath": "C:\\Users\\AngeldeCaldas\\Documents\\Demos\\Api\\Api.csproj",
         "packagesPath": "C:\\Users\\AngeldeCaldas\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\AngeldeCaldas\\Documents\\Demos\\Api\\obj\\",
+        "outputPath": "C:\\Users\\AngeldeCaldas\\Documents\\Demos\\Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\AngeldeCaldas\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -47,6 +47,10 @@
               "version": "[5.0.0-preview.6.20312.15, )"
             },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
               "target": "Package",
               "version": "[5.0.6, )"
             },

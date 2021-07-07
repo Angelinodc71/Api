@@ -7,6 +7,7 @@ using Api.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -26,7 +27,11 @@ namespace Api
             .AddNewtonsoftJson();
 
             services.AddTransient<IMailService, LocalMailService>();
-            services.AddDbContext<MovieInfoContext>();
+
+            string connectionString = "Data source=movie.db";
+            services.AddDbContext<MovieInfoContext>(o => {
+                o.UseSqlite(connectionString);
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
