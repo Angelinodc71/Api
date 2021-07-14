@@ -19,5 +19,7 @@ namespace Api.Entities
         public Movie Movie { get; set; }
 
         public int movieId { get; set; }
+
+        public int? age { get; set; }
     }
 }

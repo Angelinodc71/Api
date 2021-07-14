@@ -36,8 +36,6 @@ namespace Api.Controllers
         public IActionResult getCast(int movieId, int id) 
         {
             try {
-                throw new InvalidOperationException();
-
                 var movie = MoviesDataStore.Current
                 .Movies.FirstOrDefault(x => x.id == movieId);
 
