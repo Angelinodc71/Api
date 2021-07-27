@@ -15,7 +15,8 @@ namespace Api.Controllers
             _context = context ?? throw new ArgumentNullException(nameof(context));
         }
 
-        public IActionResult Testdatabase() {
+        public IActionResult Testdatabase() 
+        {
             return Ok();
         }
     }
