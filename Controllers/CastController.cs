@@ -13,11 +13,13 @@ namespace Api.Controllers
     public class CastController : ControllerBase
     {
         private ILogger<CastController> _logger;
-        private IMailService _iMailService;
+        private IMailService _localMailService;
+        private IMovieInfoRepository _repository;
 
-        public CastController (ILogger<CastController> logger, IMailService iMailService) {
+        public CastController (ILogger<CastController> logger, IMailService localMailService, IMovieInfoRepository repository) {
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
-            _iMailService = iMailService ?? throw new ArgumentNullException(nameof(iMailService));
+            _localMailService = localMailService ?? throw new ArgumentNullException(nameof(localMailService));
+            _repository = repository ?? throw new ArgumentNullException(nameof(repository));
         }
         [HttpGet]
         public IActionResult getCasts (int movieId) 
@@ -184,7 +186,7 @@ namespace Api.Controllers
                 return NotFound();
             }
 
-            _iMailService.Send("Recurso eliminado", $"El recurso con id {id} fue eliminado");
+            _localMailService.Send("Recurso eliminado", $"El recurso con id {id} fue eliminado");
 
             movie.Casts.Remove(castFromStore);
 

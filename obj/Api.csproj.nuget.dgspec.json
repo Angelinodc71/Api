@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\Repositories\\Api\\Api.csproj": {}
+    "C:\\Users\\AngeldeCaldas\\Documents\\Demos\\Api\\Api.csproj": {}
   },
   "projects": {
-    "Z:\\Repositories\\Api\\Api.csproj": {
+    "C:\\Users\\AngeldeCaldas\\Documents\\Demos\\Api\\Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\Repositories\\Api\\Api.csproj",
+        "projectUniqueName": "C:\\Users\\AngeldeCaldas\\Documents\\Demos\\Api\\Api.csproj",
         "projectName": "Api",
-        "projectPath": "Z:\\Repositories\\Api\\Api.csproj",
-        "packagesPath": "C:\\Users\\angel\\.nuget\\packages\\",
-        "outputPath": "Z:\\Repositories\\Api\\obj\\",
+        "projectPath": "C:\\Users\\AngeldeCaldas\\Documents\\Demos\\Api\\Api.csproj",
+        "packagesPath": "C:\\Users\\AngeldeCaldas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AngeldeCaldas\\Documents\\Demos\\Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\angel\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\AngeldeCaldas\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"

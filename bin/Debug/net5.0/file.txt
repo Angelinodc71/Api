@@ -226,3 +226,16 @@ CREATE TABLE "Casts" (
 2021-07-07 16:29:40.2239|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
 2021-07-07 16:29:40.2239|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
 2021-07-07 16:29:40.2239|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\AngeldeCaldas\Documents\Demos\Api
+2021-08-16 15:27:24.7375|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (202ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE "__EFMigrationsHistory" (
+    "MigrationId" TEXT NOT NULL CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY,
+    "ProductVersion" TEXT NOT NULL
+);
+2021-08-16 15:27:24.9184|ERROR|Api.Program|An error occured during migration
+2021-08-16 15:28:04.1241|ERROR|Api.Program|An error occured during migration
+2021-08-16 15:34:48.7345|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-08-16 15:34:48.7560|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-08-16 15:34:48.7560|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-08-16 15:34:48.7560|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-08-16 15:34:48.7560|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\AngeldeCaldas\Documents\Demos\Api
+2021-08-16 15:47:55.3112|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...

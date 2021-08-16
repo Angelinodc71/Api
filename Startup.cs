@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using api.Services;
 using Api.Context;
 using Api.Services;
 using Microsoft.AspNetCore.Builder;
@@ -40,6 +41,8 @@ namespace Api
             services.AddDbContext<MovieInfoContext>(o => {
                 o.UseSqlite(connectionString);
             });
+
+            services.AddScoped<IMovieInfoRepository, MovieInfoRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

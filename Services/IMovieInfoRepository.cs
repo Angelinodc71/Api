@@ -8,7 +8,7 @@ namespace Api.Services
     {
          IEnumerable<Movie> GetMovies();
 
-         Movie GetMovie(int movieId);
+         Movie GetMovie(int movieId, bool includeCast);
 
          IEnumerable<Cast> GetCastsByMovie(int movieId);
 

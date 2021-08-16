@@ -1,36 +1,49 @@
 using System;
 using System.Collections.Generic;
-using Api.Context;
+using System.Linq;
 using Api.Entities;
+using Api.Context;
+using Microsoft.EntityFrameworkCore;
+using Api.Services;
 
-namespace Api.Services
+namespace api.Services
 {
-    public class MovieInfoRepository : IMovieInfoRepository
+  public class MovieInfoRepository : IMovieInfoRepository
+  {
+    private MovieInfoContext _context;
+
+    public MovieInfoRepository(MovieInfoContext context)
     {
-        private MovieInfoContext _context;
+      _context = context ?? throw new ArgumentNullException(nameof(context));
+    }
 
-        public MovieInfoRepository(MovieInfoContext context)
-        {
-            _context = context ?? throw new ArgumentNullException(nameof(context));
-        }
-        public Cast GetCastByMovie(int movieId, int castId)
-        {
-            throw new System.NotImplementedException();
-        }
+    public Cast GetCastByMovie(int movieId, int castId)
+    {
+      return _context.Casts
+           .Where(x => x.movieId == movieId && x.id == castId).FirstOrDefault();
+    }
 
-        public IEnumerable<Cast> GetCastsByMovie(int movieId)
-        {
-            throw new System.NotImplementedException();
-        }
+    public IEnumerable<Cast> GetCastsByMovie(int movieId)
+    {
+      return _context.Casts
+          .Where(x => x.movieId == movieId).ToList();
+    }
 
-        public Movie GetMovie(int movieId)
-        {
-            throw new System.NotImplementedException();
-        }
+    public Movie GetMovie(int movieId, bool includeCast)
+    {
+      if (includeCast)
+      {
+        return _context.Movies.Include(c => c.Casts)
+                .Where(x => x.id == movieId).FirstOrDefault();
+      }
 
+      return _context.Movies
+                    .Where(x => x.id == movieId).FirstOrDefault();
+
+    }
         public IEnumerable<Movie> GetMovies()
         {
-            throw new System.NotImplementedException();
+            return _context.Movies.OrderBy(m => m.name).ToList();
         }
     }
 }
