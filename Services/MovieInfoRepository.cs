@@ -45,5 +45,7 @@ namespace api.Services
         {
             return _context.Movies.OrderBy(m => m.name).ToList();
         }
+
+        public bool MovieExists(int movieId) => _context.Movies.Any(x => x.id == movieId);
     }
 }

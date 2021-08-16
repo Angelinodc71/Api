@@ -13,5 +13,7 @@ namespace Api.Services
          IEnumerable<Cast> GetCastsByMovie(int movieId);
 
          Cast GetCastByMovie(int movieId, int castId);
+
+         bool MovieExists(int movieId);
     }
 }

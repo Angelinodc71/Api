@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using Api.Models;
 using Api.Services;
@@ -24,29 +25,45 @@ namespace Api.Controllers
         [HttpGet]
         public IActionResult getCasts (int movieId) 
         {
-            var movie = MoviesDataStore.Current
-            .Movies.FirstOrDefault(x => x.id == movieId);
+            // var movie = MoviesDataStore.Current
+            // .Movies.FirstOrDefault(x => x.id == movieId);
 
-            if (movie==null) {
+            if (!_repository.MovieExists(movieId)) {
                 return NotFound();
             }
 
-            return Ok(movie.Casts);
+            var casts = _repository.GetCastsByMovie(movieId);
+
+            var result = new List<CastDto>();
+
+            foreach(var castEntity in casts)
+            {
+                result.Add(
+                    new CastDto
+                    {
+                        id = castEntity.id,
+                        name = castEntity.name,
+                        character = castEntity.character
+                    }
+                );
+            }
+
+            return Ok(result);
         }
         
         [HttpGet("{id}", Name = "getCast")]
         public IActionResult getCast(int movieId, int id) 
         {
             try {
-                var movie = MoviesDataStore.Current
-                .Movies.FirstOrDefault(x => x.id == movieId);
+                // var movie = MoviesDataStore.Current
+                // .Movies.FirstOrDefault(x => x.id == movieId);
 
-                if (movie == null) 
+                if (!_repository.MovieExists(movieId)) 
                 {
                     return NotFound();
                 }
 
-                var cast = movie.Casts.FirstOrDefault(x => x.id == id); 
+                var cast = _repository.GetCastByMovie(movieId, id); 
                 
                 if (cast == null) 
                 {
@@ -54,7 +71,14 @@ namespace Api.Controllers
                     return NotFound();
                 }
 
-                return Ok(cast);
+                var result = new CastDto 
+                {
+                    id = cast.id,
+                    name = cast.name,
+                    character = cast.character
+                };
+
+                return Ok(result);
             }
             catch (System.Exception ex)
             {

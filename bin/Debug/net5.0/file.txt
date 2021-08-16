@@ -239,3 +239,16 @@ CREATE TABLE "__EFMigrationsHistory" (
 2021-08-16 15:34:48.7560|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
 2021-08-16 15:34:48.7560|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\AngeldeCaldas\Documents\Demos\Api
 2021-08-16 15:47:55.3112|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2021-08-16 16:49:38.4594|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-08-16 16:49:38.4894|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-08-16 16:49:38.4894|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-08-16 16:49:38.4894|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-08-16 16:49:38.4894|INFO|Microsoft.Hosting.Lifetime|Content root path: Z:\Repositories\Api
+2021-08-16 17:00:18.8615|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2021-08-16 17:00:24.5365|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-08-16 17:00:24.5547|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-08-16 17:00:24.5547|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-08-16 17:00:24.5547|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-08-16 17:00:24.5547|INFO|Microsoft.Hosting.Lifetime|Content root path: Z:\Repositories\Api
+2021-08-16 17:01:30.1331|INFO|Api.Controllers.CastController|This cast with id 2 not found !
+2021-08-16 17:19:50.2016|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
