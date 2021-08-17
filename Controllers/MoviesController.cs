@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Api.Models;
 using Api.Services;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers
@@ -12,31 +13,18 @@ namespace Api.Controllers
     public class MoviesController : ControllerBase
     {
         private IMovieInfoRepository _repository;
+        private IMapper _mapper;
 
-        public MoviesController (IMovieInfoRepository repository) 
+        public MoviesController (IMovieInfoRepository repository, IMapper mapper) 
         {
             _repository = repository ?? throw new ArgumentNullException(nameof(repository));
+            _mapper = mapper ?? throw new ArgumentNullException(nameof(repository));
         }
         public IActionResult GetMovies(){
             // return Ok(MoviesDataStore.Current.Movies);
             
             var movies = _repository.GetMovies();
-
-            var results = new List<MovieDto>();
-
-            foreach (var movieEntity in movies) 
-            {
-                results.Add(
-                    new MovieDto
-                    {
-                        id = movieEntity.id,
-                        name = movieEntity.name,
-                        description = movieEntity.description
-                    }
-                );
-            }
-            
-            return Ok(results);
+            return Ok(_mapper.Map<IEnumerable<MovieWithoutCastDto>>(movies));
 
         }
         
@@ -50,26 +38,12 @@ namespace Api.Controllers
                 return NotFound();
             }
 
-            var result = new MovieDto
+            if(!includeCast)
             {
-                id = movie.id,
-                name = movie.name,
-                description = movie.description
-            };
-
-            foreach (var cast in movie.Casts)
-            {
-                result.Casts.Add(
-                    new CastDto
-                    {
-                        id = cast.id,
-                        name = cast.name,
-                        character = cast.character
-                    }
-                );
+                return Ok(_mapper.Map<MovieWithoutCastDto>(movie));
             }
         
-            return Ok(result);
+            return Ok(_mapper.Map<MovieDto>(movie));
         }
     }
 }

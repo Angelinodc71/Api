@@ -118,3 +118,5 @@ Z:\Repositories\Api\obj\Debug\net5.0\Api.dll
 Z:\Repositories\Api\obj\Debug\net5.0\ref\Api.dll
 Z:\Repositories\Api\obj\Debug\net5.0\Api.pdb
 Z:\Repositories\Api\obj\Debug\net5.0\Api.genruntimeconfig.cache
+Z:\Repositories\Api\bin\Debug\net5.0\AutoMapper.dll
+Z:\Repositories\Api\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

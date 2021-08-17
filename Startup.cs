@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using api.Services;
 using Api.Context;
 using Api.Services;
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -43,6 +44,7 @@ namespace Api
             });
 
             services.AddScoped<IMovieInfoRepository, MovieInfoRepository>();
+            services.AddAutoMapper(typeof(Startup));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

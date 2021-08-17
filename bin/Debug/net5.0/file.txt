@@ -252,3 +252,42 @@ CREATE TABLE "__EFMigrationsHistory" (
 2021-08-16 17:00:24.5547|INFO|Microsoft.Hosting.Lifetime|Content root path: Z:\Repositories\Api
 2021-08-16 17:01:30.1331|INFO|Api.Controllers.CastController|This cast with id 2 not found !
 2021-08-16 17:19:50.2016|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2021-08-17 09:48:24.0624|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-08-17 09:48:24.0881|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-08-17 09:48:24.0881|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-08-17 09:48:24.0881|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-08-17 09:48:24.0881|INFO|Microsoft.Hosting.Lifetime|Content root path: Z:\Repositories\Api
+2021-08-17 09:50:42.9960|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2021-08-17 09:50:47.7887|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-08-17 09:50:47.8053|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-08-17 09:50:47.8053|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-08-17 09:50:47.8053|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-08-17 09:50:47.8053|INFO|Microsoft.Hosting.Lifetime|Content root path: Z:\Repositories\Api
+2021-08-17 12:09:49.6429|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2021-08-17 12:09:59.0371|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-08-17 12:09:59.0589|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-08-17 12:09:59.0589|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-08-17 12:09:59.0589|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-08-17 12:09:59.0589|INFO|Microsoft.Hosting.Lifetime|Content root path: Z:\Repositories\Api
+2021-08-17 12:14:06.5771|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2021-08-17 12:14:11.3212|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-08-17 12:14:11.3400|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-08-17 12:14:11.3400|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-08-17 12:14:11.3400|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-08-17 12:14:11.3400|INFO|Microsoft.Hosting.Lifetime|Content root path: Z:\Repositories\Api
+2021-08-17 12:14:29.7804|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2021-08-17 12:14:46.6659|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2021-08-17 12:16:25.5812|INFO|Api.Controllers.CastController|This cast with id 3 not found !
+2021-08-17 12:16:30.5725|FATAL|Api.Controllers.CastController|This cast with id 4 not found (user)!
+2021-08-17 12:16:36.0453|INFO|Api.Controllers.CastController|This cast with id 2 not found !
+2021-08-17 12:16:40.9245|FATAL|Api.Controllers.CastController|This cast with id 5 not found (user)!
+2021-08-17 12:17:02.7409|FATAL|Api.Controllers.CastController|This cast with id 1 not found (user)!
+2021-08-17 12:17:03.8518|FATAL|Api.Controllers.CastController|This cast with id 1 not found (user)!
+2021-08-17 12:17:04.6923|FATAL|Api.Controllers.CastController|This cast with id 1 not found (user)!
+2021-08-17 12:23:13.6755|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2021-08-17 12:23:19.4236|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-08-17 12:23:19.4425|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-08-17 12:23:19.4425|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-08-17 12:23:19.4425|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-08-17 12:23:19.4425|INFO|Microsoft.Hosting.Lifetime|Content root path: Z:\Repositories\Api
+2021-08-17 12:23:44.1654|INFO|Api.Controllers.CastController|This cast with id 4 not found !

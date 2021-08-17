@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Api.Models;
 using Api.Services;
+using AutoMapper;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -16,11 +17,14 @@ namespace Api.Controllers
         private ILogger<CastController> _logger;
         private IMailService _localMailService;
         private IMovieInfoRepository _repository;
+        private IMapper _mapper;
 
-        public CastController (ILogger<CastController> logger, IMailService localMailService, IMovieInfoRepository repository) {
+        public CastController (ILogger<CastController> logger, IMailService localMailService, IMovieInfoRepository repository,
+        IMapper mapper) {
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
             _localMailService = localMailService ?? throw new ArgumentNullException(nameof(localMailService));
             _repository = repository ?? throw new ArgumentNullException(nameof(repository));
+            _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
         }
         [HttpGet]
         public IActionResult getCasts (int movieId) 
@@ -34,21 +38,7 @@ namespace Api.Controllers
 
             var casts = _repository.GetCastsByMovie(movieId);
 
-            var result = new List<CastDto>();
-
-            foreach(var castEntity in casts)
-            {
-                result.Add(
-                    new CastDto
-                    {
-                        id = castEntity.id,
-                        name = castEntity.name,
-                        character = castEntity.character
-                    }
-                );
-            }
-
-            return Ok(result);
+            return Ok(_mapper.Map<IEnumerable<CastDto>>(casts));
         }
         
         [HttpGet("{id}", Name = "getCast")]
@@ -71,14 +61,7 @@ namespace Api.Controllers
                     return NotFound();
                 }
 
-                var result = new CastDto 
-                {
-                    id = cast.id,
-                    name = cast.name,
-                    character = cast.character
-                };
-
-                return Ok(result);
+                return Ok(_mapper.Map<CastDto>(cast));
             }
             catch (System.Exception ex)
             {
