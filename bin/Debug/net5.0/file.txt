@@ -291,3 +291,61 @@ CREATE TABLE "__EFMigrationsHistory" (
 2021-08-17 12:23:19.4425|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
 2021-08-17 12:23:19.4425|INFO|Microsoft.Hosting.Lifetime|Content root path: Z:\Repositories\Api
 2021-08-17 12:23:44.1654|INFO|Api.Controllers.CastController|This cast with id 4 not found !
+2021-08-17 12:25:33.7338|INFO|Api.Controllers.CastController|This cast with id 1 not found !
+2021-08-17 12:25:47.2836|INFO|Api.Controllers.CastController|This cast with id 7 not found !
+2021-08-17 12:25:53.8567|INFO|Api.Controllers.CastController|This cast with id 3 not found !
+2021-08-18 16:57:06.7925|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-08-18 16:57:06.8132|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-08-18 16:57:06.8132|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-08-18 16:57:06.8173|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-08-18 16:57:06.8173|INFO|Microsoft.Hosting.Lifetime|Content root path: Z:\Repositories\Api
+2021-08-18 16:57:19.6444|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2021-08-18 16:57:24.9217|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-08-18 16:57:24.9397|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-08-18 16:57:24.9412|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-08-18 16:57:24.9412|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-08-18 16:57:24.9412|INFO|Microsoft.Hosting.Lifetime|Content root path: Z:\Repositories\Api
+2021-08-18 16:58:08.2124|INFO|Api.Controllers.CastController|This cast with id 3 not found !
+2021-08-19 12:38:38.9378|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-08-19 12:38:38.9579|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-08-19 12:38:38.9615|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-08-19 12:38:38.9615|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-08-19 12:38:38.9615|INFO|Microsoft.Hosting.Lifetime|Content root path: Z:\Repositories\Api
+2021-08-19 13:12:56.7511|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2021-08-19 13:13:04.0273|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-08-19 13:13:04.0635|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-08-19 13:13:04.0635|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-08-19 13:13:04.0635|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-08-19 13:13:04.0673|INFO|Microsoft.Hosting.Lifetime|Content root path: Z:\Repositories\Api
+2021-08-19 13:16:35.0529|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2021-08-19 13:16:40.3497|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-08-19 13:16:40.3708|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-08-19 13:16:40.3708|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-08-19 13:16:40.3708|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-08-19 13:16:40.3708|INFO|Microsoft.Hosting.Lifetime|Content root path: Z:\Repositories\Api
+2021-08-19 13:39:10.3066|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2021-08-19 13:39:16.7216|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-08-19 13:39:16.7521|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-08-19 13:39:16.7521|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-08-19 13:39:16.7563|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-08-19 13:39:16.7563|INFO|Microsoft.Hosting.Lifetime|Content root path: Z:\Repositories\Api
+2021-08-19 13:44:34.6506|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2021-08-19 13:44:39.8091|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-08-19 13:44:39.8353|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-08-19 13:44:39.8353|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-08-19 13:44:39.8353|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-08-19 13:44:39.8353|INFO|Microsoft.Hosting.Lifetime|Content root path: Z:\Repositories\Api
+2021-08-19 13:51:50.2574|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2021-08-19 13:51:56.4058|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-08-19 13:51:56.4270|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-08-19 13:51:56.4270|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-08-19 13:51:56.4270|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-08-19 13:51:56.4270|INFO|Microsoft.Hosting.Lifetime|Content root path: Z:\Repositories\Api
+2021-08-19 13:52:08.4228|INFO|Api.Controllers.CastController|This cast with id 1 not found !
+2021-08-19 13:52:39.9730|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2021-08-19 13:52:45.5316|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001
+2021-08-19 13:52:45.5490|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000
+2021-08-19 13:52:45.5490|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2021-08-19 13:52:45.5490|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2021-08-19 13:52:45.5490|INFO|Microsoft.Hosting.Lifetime|Content root path: Z:\Repositories\Api
+2021-08-19 13:53:13.0792|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...

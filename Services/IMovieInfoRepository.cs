@@ -15,5 +15,13 @@ namespace Api.Services
          Cast GetCastByMovie(int movieId, int castId);
 
          bool MovieExists(int movieId);
+
+         void AddCastForMovie(int movieId, Cast cast);
+
+         bool Save();
+
+        void UpdateCastForMovie(int movieId, Cast cast);
+
+        void DeleteCast(Cast cast);
     }
 }

@@ -47,5 +47,24 @@ namespace api.Services
         }
 
         public bool MovieExists(int movieId) => _context.Movies.Any(x => x.id == movieId);
+
+        public void AddCastForMovie(int movieId, Cast cast)
+        {
+          var movie = GetMovie(movieId, false);
+
+          movie.Casts.Add(cast);
+        }
+
+        public bool Save() => _context.SaveChanges() > 0;
+
+        public void UpdateCastForMovie(int movieId, Cast cast)
+        {
+
+        }
+
+        public void DeleteCast(Cast cast)
+        {
+          _context.Casts.Remove(cast);
+        }
     }
 }

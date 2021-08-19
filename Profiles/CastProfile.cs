@@ -9,6 +9,9 @@ namespace Api.Profiles
         public CastProfile()
         {
             CreateMap<Cast, CastDto>();
+            CreateMap<CastForCreationDto, Cast>();
+            CreateMap<Cast, CastForCreationDto>();
+            CreateMap<CastForUpdateDto, Cast>().ReverseMap();
         }
     }
 }
